@@ -1,0 +1,2001 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Vink_StoreTZ | Premium & Used Smartphones Dar es Salaam</title>
+    <meta name="description" content="Tanzania's most trusted smartphone retailer. Shop new and certified used iPhones, Samsung, Google Pixel. Warranty included, same-day delivery in Dar es Salaam.">
+    
+    <style>
+        /* ========== RESET & VARIABLES ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        :root {
+            --primary-green: #00ff88;
+            --dark-green: #00cc66;
+            --forest-green: rgba(10, 59, 46, 0.3);
+            --black: rgba(0, 0, 0, 0.85);
+            --black-2: rgba(10, 10, 10, 0.7);
+            --black-3: rgba(20, 20, 20, 0.5);
+            --white: #ffffff;
+            --off-white: rgba(245, 245, 247, 0.9);
+            --soft-gray: rgba(161, 161, 166, 0.9);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-bg-2: rgba(0, 255, 136, 0.02);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-border-2: rgba(0, 255, 136, 0.15);
+            --shadow-sm: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 12px 48px rgba(0, 255, 136, 0.15);
+            --shadow-lg: 0 24px 64px rgba(0, 255, 136, 0.2);
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000, #0a1f1a, #000000);
+            min-height: 100vh;
+            color: var(--white);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            position: relative;
+        }
+
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(0, 255, 136, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(0, 255, 136, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 40% 80%, rgba(0, 255, 136, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+            animation: backgroundPulse 10s ease infinite;
+        }
+
+        @keyframes backgroundPulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* ========== CUSTOM SCROLLBAR ========== */
+        ::-webkit-scrollbar {
+            width: 14px;
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 255, 136, 0.3);
+            border-radius: 7px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            backdrop-filter: blur(5px);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 255, 136, 0.5);
+            border: 2px solid transparent;
+        }
+
+        /* ========== UTILITY CLASSES ========== */
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+        }
+
+        /* Transparent Glass Card */
+        .glass-card {
+            background: rgba(10, 10, 10, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 40px;
+            padding: 35px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.05), transparent);
+            transition: left 0.8s ease;
+            z-index: 0;
+        }
+
+        .glass-card:hover::before {
+            left: 100%;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: rgba(0, 255, 136, 0.3);
+            box-shadow: 0 30px 60px rgba(0, 255, 136, 0.2);
+        }
+
+        /* Buttons with larger text */
+        .btn-primary {
+            background: linear-gradient(135deg, #00ff88, #00cc66);
+            color: #000000;
+            padding: 18px 45px;
+            border-radius: 60px;
+            border: none;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.4);
+            background: linear-gradient(135deg, #00ff99, #00dd77);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 18px 45px;
+            border-radius: 60px;
+            border: none;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Section Headers - LARGER TEXT */
+        .section-tag {
+            display: inline-block;
+            color: #00ff88;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 40px;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        .section-tag::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 30px;
+            height: 3px;
+            background: #00ff88;
+            transform: translateY(-50%);
+            box-shadow: 0 0 10px #00ff88;
+        }
+
+        .section-title {
+            font-size: clamp(48px, 6vw, 72px);
+            margin-bottom: 25px;
+            line-height: 1.2;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff, #00ff88, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 22px;
+            max-width: 700px;
+            margin-bottom: 50px;
+            line-height: 1.6;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ========== STICKY NAVIGATION ========== */
+        .navbar {
+            position: sticky;
+            top: 20px;
+            z-index: 1000;
+            margin: 20px 40px 0;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 80px;
+            padding: 18px 35px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #00ff88, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            letter-spacing: -1px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-menu a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-menu a:hover {
+            color: #00ff88;
+            text-shadow: 0 0 10px #00ff88;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: #00ff88;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px #00ff88;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            font-size: 26px;
+            color: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+        }
+
+        .cart-icon:hover {
+            color: #00ff88;
+            transform: scale(1.1);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            background: #00ff88;
+            color: #000000;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 800;
+            box-shadow: 0 0 15px #00ff88;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            padding: 100px 0 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 70px;
+            padding: 12px 30px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-badge span {
+            width: 12px;
+            height: 12px;
+            background: #00ff88;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 15px #00ff88;
+        }
+
+        .hero h1 {
+            font-size: clamp(56px, 7vw, 86px);
+            line-height: 1.1;
+            margin-bottom: 35px;
+            font-weight: 800;
+            text-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .hero-gradient-text {
+            background: linear-gradient(135deg, #00ff88, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+            margin-bottom: 45px;
+            line-height: 1.7;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 60px;
+            margin: 50px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #00ff88;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px #00ff88;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid rgba(0, 255, 136, 0.3);
+            border-radius: 50px;
+            z-index: -1;
+            box-shadow: 0 0 50px rgba(0, 255, 136, 0.2);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+            transition: all 0.6s ease;
+            border: 2px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.03) rotate(1deg);
+            border-color: rgba(0, 255, 136, 0.4);
+        }
+
+        .floating-badge {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 30px;
+            padding: 20px 35px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .badge-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00ff88, #00cc66);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 0 30px #00ff88;
+        }
+
+        .badge-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+        }
+
+        .badge-text h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* ========== PRODUCT GRID ========== */
+        .product-section {
+            margin: 100px 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 1400px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .product-card {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 40px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-card:hover {
+            transform: translateY(-20px) scale(1.03);
+            border-color: rgba(0, 255, 136, 0.4);
+            box-shadow: 0 40px 80px rgba(0, 255, 136, 0.3);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 2;
+            display: flex;
+            gap: 15px;
+        }
+
+        .badge-condition {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .badge-new {
+            background: linear-gradient(135deg, #00ff88, #00cc66);
+            color: #000000;
+            box-shadow: 0 0 20px #00ff88;
+        }
+
+        .badge-used {
+            background: linear-gradient(135deg, #ffaa00, #ff8800);
+            color: #000000;
+            box-shadow: 0 0 20px #ffaa00;
+        }
+
+        .badge-stock {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+        }
+
+        .badge-instock {
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+            border: 1px solid #00ff88;
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+        }
+
+        .badge-lowstock {
+            background: rgba(255, 170, 0, 0.2);
+            color: #ffaa00;
+            border: 1px solid #ffaa00;
+            box-shadow: 0 0 15px rgba(255, 170, 0, 0.3);
+        }
+
+        .badge-soldout {
+            background: rgba(255, 68, 68, 0.2);
+            color: #ff4444;
+            border: 1px solid #ff4444;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 320px;
+            object-fit: contain;
+            transition: all 0.7s ease;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.12);
+        }
+
+        .product-info {
+            padding: 30px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .product-category {
+            color: #00ff88;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-shadow: 0 0 10px #00ff88;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            color: white;
+        }
+
+        .product-price-box {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .product-price {
+            font-size: 32px;
+            font-weight: 800;
+            color: #00ff88;
+            text-shadow: 0 0 15px #00ff88;
+        }
+
+        .product-old-price {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: line-through;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .stars {
+            color: #ffaa00;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        .reviews {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: all 0.5s ease;
+        }
+
+        .product-card:hover .product-actions {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-add-cart {
+            flex: 1;
+            padding: 16px;
+            background: linear-gradient(135deg, #00ff88, #00cc66);
+            border: none;
+            border-radius: 20px;
+            color: #000000;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-add-cart:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px #00ff88;
+        }
+
+        .btn-quick-view {
+            width: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .btn-quick-view:hover {
+            background: #00ff88;
+            color: #000000;
+            transform: rotate(5deg);
+        }
+
+        /* ========== ABOUT US SECTION ========== */
+        .about-section {
+            margin: 120px 0;
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+            margin: 50px 0;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .about-feature:hover .feature-icon {
+            background: #00ff88;
+            color: #000000;
+            transform: rotate(8deg) scale(1.15);
+            box-shadow: 0 0 40px #00ff88;
+        }
+
+        .feature-text h4 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        .feature-text p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+        }
+
+        .about-stats {
+            display: flex;
+            gap: 60px;
+            margin-top: 50px;
+            padding-top: 50px;
+            border-top: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .about-stat {
+            text-align: center;
+        }
+
+        .about-stat .stat-number {
+            font-size: 56px;
+            color: #00ff88;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px #00ff88;
+        }
+
+        .about-stat .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 50px;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid rgba(0, 255, 136, 0.3);
+            border-radius: 50px;
+            z-index: -1;
+            box-shadow: 0 0 60px rgba(0, 255, 136, 0.2);
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 30px;
+            padding: 25px 35px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .experience-badge .number {
+            font-size: 56px;
+            font-weight: 800;
+            color: #00ff88;
+            line-height: 1;
+            text-shadow: 0 0 30px #00ff88;
+        }
+
+        .experience-badge .text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        /* ========== SERVICES SECTION ========== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .service-card {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 35px;
+            padding: 45px 30px;
+            text-align: center;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #00ff88, transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .service-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            border-color: rgba(0, 255, 136, 0.4);
+            box-shadow: 0 40px 60px rgba(0, 255, 136, 0.2);
+        }
+
+        .service-icon {
+            width: 90px;
+            height: 90px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            margin: 0 auto 30px;
+            transition: all 0.5s ease;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.1);
+        }
+
+        .service-card:hover .service-icon {
+            background: #00ff88;
+            color: #000000;
+            transform: rotate(8deg) scale(1.15);
+            box-shadow: 0 0 50px #00ff88;
+        }
+
+        .service-card h3 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .service-card p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonials-slider {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            margin: 50px 0;
+        }
+
+        .testimonial-card {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 40px;
+            padding: 45px;
+            transition: all 0.5s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(0, 255, 136, 0.4);
+            transform: translateY(-15px);
+            box-shadow: 0 40px 60px rgba(0, 255, 136, 0.2);
+        }
+
+        .testimonial-rating {
+            color: #ffaa00;
+            font-size: 28px;
+            margin-bottom: 25px;
+            text-shadow: 0 0 20px #ffaa00;
+        }
+
+        .testimonial-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .author-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00ff88, #00cc66);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 28px;
+            color: #000000;
+            box-shadow: 0 0 30px #00ff88;
+        }
+
+        .author-info h4 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .author-info p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+        }
+
+        @media (max-width: 1100px) {
+            .testimonials-slider {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .testimonials-slider {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========== FAQ SECTION ========== */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 50px 0;
+        }
+
+        .faq-item {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 30px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(0, 255, 136, 0.3);
+        }
+
+        .faq-question {
+            padding: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 22px;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .faq-question:hover {
+            color: #00ff88;
+        }
+
+        .faq-question .icon {
+            transition: transform 0.4s ease;
+            font-size: 28px;
+            color: #00ff88;
+        }
+
+        .faq-item.active .faq-question .icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.6s ease;
+            padding: 0 30px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 30px 30px;
+        }
+
+        @media (max-width: 800px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            margin-top: 120px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 70px;
+            padding: 80px 0;
+        }
+
+        .footer-logo {
+            font-size: 36px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #00ff88, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 25px;
+            display: inline-block;
+            text-shadow: 0 0 30px #00ff88;
+        }
+
+        .footer-about {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.9;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-link {
+            width: 55px;
+            height: 55px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            font-size: 24px;
+            backdrop-filter: blur(5px);
+        }
+
+        .social-link:hover {
+            background: #00ff88;
+            color: #000000;
+            transform: translateY(-8px) rotate(360deg);
+            box-shadow: 0 0 40px #00ff88;
+        }
+
+        .footer-title {
+            font-size: 26px;
+            margin-bottom: 30px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 18px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 18px;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .footer-links a:hover {
+            color: #00ff88;
+            padding-left: 12px;
+            text-shadow: 0 0 10px #00ff88;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+        }
+
+        .contact-info i {
+            width: 25px;
+            color: #00ff88;
+            font-size: 22px;
+            text-shadow: 0 0 10px #00ff88;
+        }
+
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .payment-method {
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 15px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .payment-method:hover {
+            border-color: #00ff88;
+            color: #00ff88;
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .footer-bottom {
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid rgba(0, 255, 136, 0.2);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+        }
+
+        @media (max-width: 1200px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========== FLOATING WHATSAPP ========== */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.2) rotate(8deg);
+            box-shadow: 0 25px 60px rgba(37, 211, 102, 0.6);
+        }
+
+        .floating-whatsapp img {
+            width: 45px;
+            height: 45px;
+            filter: brightness(0) invert(1);
+        }
+
+        .floating-whatsapp::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(37, 211, 102, 0.4);
+            animation: pulse-ring 2s infinite;
+            z-index: -1;
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.8); opacity: 0; }
+        }
+
+        @media (max-width: 768px) {
+            .floating-whatsapp {
+                bottom: 25px;
+                right: 25px;
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes slideIn {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100px); opacity: 0; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <!-- STICKY NAVIGATION - MORE TRANSPARENT -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">VINK_STORETZ</a>
+            <div class="nav-menu">
+                <a href="#new">New</a>
+                <a href="#used">Used</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="cart-icon" onclick="toggleCart()">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div>
+                    <div class="hero-badge">
+                        <span></span>
+                        <span>Premium & Trusted Since 2020</span>
+                    </div>
+                    <h1>
+                        Dar's <span class="hero-gradient-text">Premium</span><br>
+                        Phone Destination
+                    </h1>
+                    <p class="hero-description">
+                        Tanzania's most trusted smartphone retailer. New & certified used devices with warranty, 
+                        same-day delivery across Dar es Salaam, and flexible Lipa Pole Pole.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Genuine</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToProducts()">Shop New Arrivals</button>
+                        <button class="btn-whatsapp" onclick="openWhatsApp()">WhatsApp Us</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600" alt="iPhone 16 Pro" loading="lazy">
+                    <div class="floating-badge">
+                        <div class="badge-icon">📱</div>
+                        <div class="badge-text">
+                            <p>Just Arrived</p>
+                            <h4>iPhone 16 Series</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW PHONES SECTION - iPhone 11 to 17 Pro Max -->
+    <section id="new" class="product-section">
+        <div class="container">
+            <span class="section-tag">Premium Collection</span>
+            <h2 class="section-title">Brand New iPhones</h2>
+            <p class="section-subtitle">Latest models from iPhone 11 to 17 Pro Max - 100% genuine with full warranty</p>
+            <div class="product-grid" id="newiPhoneProducts"></div>
+        </div>
+    </section>
+
+    <!-- NEW SAMSUNG SECTION - S10 Plus to S25 -->
+    <section class="product-section">
+        <div class="container">
+            <span class="section-tag">Galaxy Series</span>
+            <h2 class="section-title">New Samsung Phones</h2>
+            <p class="section-subtitle">From S10 Plus to the latest S25 Ultra - Flagship Android devices</p>
+            <div class="product-grid" id="newSamsungProducts"></div>
+        </div>
+    </section>
+
+    <!-- NEW GOOGLE SECTION - Pixel 6 to 10 Pro XL -->
+    <section class="product-section">
+        <div class="container">
+            <span class="section-tag">Pixel Series</span>
+            <h2 class="section-title">New Google Pixel</h2>
+            <p class="section-subtitle">Pure Android experience - Pixel 6 to 10 Pro XL</p>
+            <div class="product-grid" id="newGoogleProducts"></div>
+        </div>
+    </section>
+
+    <!-- USED PHONES SECTION - iPhone -->
+    <section id="used" class="product-section">
+        <div class="container">
+            <span class="section-tag">Certified Pre-Owned</span>
+            <h2 class="section-title">Used iPhones</h2>
+            <p class="section-subtitle">Grade A quality, fully tested, 6-month warranty - iPhone 11 to 15 Pro Max</p>
+            <div class="product-grid" id="usediPhoneProducts"></div>
+        </div>
+    </section>
+
+    <!-- USED SAMSUNG SECTION -->
+    <section class="product-section">
+        <div class="container">
+            <span class="section-tag">Certified Pre-Owned</span>
+            <h2 class="section-title">Used Samsung Phones</h2>
+            <p class="section-subtitle">Grade A quality - S10 Plus to S23 Ultra</p>
+            <div class="product-grid" id="usedSamsungProducts"></div>
+        </div>
+    </section>
+
+    <!-- USED GOOGLE SECTION -->
+    <section class="product-section">
+        <div class="container">
+            <span class="section-tag">Certified Pre-Owned</span>
+            <h2 class="section-title">Used Google Pixel</h2>
+            <p class="section-subtitle">Grade A quality - Pixel 6 to 8 Pro</p>
+            <div class="product-grid" id="usedGoogleProducts"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Dar es Salaam's Most Trusted Phone Store</h2>
+                    <p class="hero-description">
+                        Since 2020, Vink_StoreTZ has been revolutionizing mobile retail in Tanzania. 
+                        We combine global standards with local trust, ensuring every customer gets premium devices, 
+                        transparent pricing, and unparalleled after-sales support.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">🔒</div>
+                            <div class="feature-text">
+                                <h4>100% Genuine</h4>
+                                <p>All devices verified with original IMEI</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">🛡️</div>
+                            <div class="feature-text">
+                                <h4>Warranty Included</h4>
+                                <p>1-year on new, 6-months on used</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">🚚</div>
+                            <div class="feature-text">
+                                <h4>Same-Day Delivery</h4>
+                                <p>Free across Dar es Salaam</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">💳</div>
+                            <div class="feature-text">
+                                <h4>Lipa Pole Pole</h4>
+                                <p>Flexible payment plans</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Years</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-number">5K+</div>
+                            <div class="stat-label">Customers</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Models</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600" alt="Vink_StoreTZ Store" loading="lazy">
+                    <div class="experience-badge">
+                        <div class="number">4+</div>
+                        <div class="text">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <span class="section-tag">Our Services</span>
+            <h2 class="section-title">Beyond Just Selling Phones</h2>
+            <p class="section-subtitle">Comprehensive mobile solutions for our valued customers</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Screen Repair</h3>
+                    <p>Professional repair with genuine parts, 3-month warranty</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Software Fix</h3>
+                    <p>OS updates, jailbreak, unlock, optimization</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔓</div>
+                    <h3>Network Unlock</h3>
+                    <p>Unlock any phone for all Tanzanian networks</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Insurance</h3>
+                    <p>Protect against theft and damage</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Bulk Supply</h3>
+                    <p>Corporate orders & wholesale pricing</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Pre-Order</h3>
+                    <p>Be first to get latest releases</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Import Service</h3>
+                    <p>Import from UAE, UK, Korea</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Express Repair</h3>
+                    <p>2-hour service available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <span class="section-tag">Testimonials</span>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real experiences from happy Vink_StoreTZ customers</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best phone store in Dar! Got my iPhone 15 Pro same day, genuine product with warranty. Lipa Pole Pole made it affordable!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>John M.</h4>
+                            <p>Masaki</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Traded in my old Samsung for S24 Ultra. Great deal, professional service. Same-day delivery to Mlimani City. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">F</div>
+                        <div class="author-info">
+                            <h4>Fatma K.</h4>
+                            <p>Mlimani City</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Certified used Pixel 7 Pro - looks brand new! 6-month warranty gives peace of mind. Asante Vink_StoreTZ!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">H</div>
+                        <div class="author-info">
+                            <h4>Hamadi R.</h4>
+                            <p>Posta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <span class="section-tag">FAQ</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about shopping with us</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are your phones genuine?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! All our phones are 100% genuine with original IMEI numbers. We provide warranty cards and you can verify IMEI on our website.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How does Lipa Pole Pole work?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Pay in affordable monthly installments. Choose your device, pay deposit, and spread the rest over 3-12 months. No hidden fees!
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you offer delivery?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Same-day delivery across Dar es Salaam. Free in Masaki, Oysterbay, Mlimani City, Posta, and Kariakoo.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What payment methods?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        M-Pesa, Tigo Pesa, Airtel Money, HaloPesa, bank transfer, and cash on delivery. All payments secure.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="#" class="footer-logo">VINK_STORETZ</a>
+                    <p class="footer-about">
+                        Tanzania's most trusted premium smartphone retailer. New & certified used devices with warranty and same-day delivery in Dar es Salaam.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#new">New iPhones</a></li>
+                        <li><a href="#new">New Samsung</a></li>
+                        <li><a href="#new">New Google</a></li>
+                        <li><a href="#used">Used Phones</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <span>📍</span>
+                            <span>Dar es Salaam, Tanzania</span>
+                        </li>
+                        <li>
+                            <span>📞</span>
+                            <span>+255 699 278 951</span>
+                        </li>
+                        <li>
+                            <span>✉️</span>
+                            <span>info@vinkstoretz.com</span>
+                        </li>
+                        <li>
+                            <span>⏰</span>
+                            <span>Mon-Sun: 9AM - 9PM</span>
+                        </li>
+                    </ul>
+                    <h4 class="footer-title" style="margin-top: 30px;">We Accept</h4>
+                    <div class="payment-methods">
+                        <span class="payment-method">M-Pesa</span>
+                        <span class="payment-method">Tigo Pesa</span>
+                        <span class="payment-method">Airtel</span>
+                        <span class="payment-method">HaloPesa</span>
+                        <span class="payment-method">Bank</span>
+                        <span class="payment-method">Cash</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Vink_StoreTZ. All rights reserved. Premium smartphone retailer in Dar es Salaam, Tanzania.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <div class="floating-whatsapp" onclick="openWhatsApp()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+
+    <script>
+        // ========== COMPLETE PRODUCT DATABASE WITH JIJI PRICES (Dar es Salaam Market) ==========
+        const products = {
+            // NEW iPHONES - iPhone 11 to 17 Pro Max
+            newiPhone: [
+                { id: 1, name: "iPhone 11 64GB", price: 850000, oldPrice: 950000, stock: 15, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg", condition: "New", rating: 4.5, reviews: 89 },
+                { id: 2, name: "iPhone 12 128GB", price: 1100000, oldPrice: 1250000, stock: 12, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg", condition: "New", rating: 4.6, reviews: 124 },
+                { id: 3, name: "iPhone 13 128GB", price: 1350000, oldPrice: 1500000, stock: 10, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg", condition: "New", rating: 4.7, reviews: 156 },
+                { id: 4, name: "iPhone 14 128GB", price: 1650000, oldPrice: 1850000, stock: 8, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg", condition: "New", rating: 4.7, reviews: 98 },
+                { id: 5, name: "iPhone 15 128GB", price: 2100000, oldPrice: 2350000, stock: 6, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg", condition: "New", rating: 4.8, reviews: 145 },
+                { id: 6, name: "iPhone 15 Pro 256GB", price: 2800000, oldPrice: 3100000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg", condition: "New", rating: 4.9, reviews: 89 },
+                { id: 7, name: "iPhone 15 Pro Max 256GB", price: 3200000, oldPrice: 3500000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg", condition: "New", rating: 4.9, reviews: 234 },
+                { id: 8, name: "iPhone 16 128GB", price: 2600000, oldPrice: 2900000, stock: 7, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg", condition: "New", rating: 4.8, reviews: 67 },
+                { id: 9, name: "iPhone 16 Pro 256GB", price: 3400000, oldPrice: 3750000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro.jpg", condition: "New", rating: 4.9, reviews: 45 },
+                { id: 10, name: "iPhone 16 Pro Max 256GB", price: 3800000, oldPrice: 4200000, stock: 2, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg", condition: "New", rating: 5.0, reviews: 78 },
+                { id: 11, name: "iPhone 17 128GB", price: 3200000, oldPrice: 3500000, stock: 5, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg", condition: "New", rating: 4.8, reviews: 34 },
+                { id: 12, name: "iPhone 17 Pro 256GB", price: 4100000, oldPrice: 4500000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg", condition: "New", rating: 4.9, reviews: 23 },
+                { id: 13, name: "iPhone 17 Pro Max 256GB", price: 4600000, oldPrice: 5000000, stock: 2, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg", condition: "New", rating: 5.0, reviews: 56 }
+            ],
+
+            // NEW SAMSUNG - S10 Plus to S25
+            newSamsung: [
+                { id: 101, name: "Samsung S10 Plus 128GB", price: 650000, oldPrice: 750000, stock: 10, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s10-plus.jpg", condition: "New", rating: 4.4, reviews: 67 },
+                { id: 102, name: "Samsung S20 FE 128GB", price: 750000, oldPrice: 850000, stock: 12, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-fe-.jpg", condition: "New", rating: 4.5, reviews: 89 },
+                { id: 103, name: "Samsung S21 128GB", price: 900000, oldPrice: 1000000, stock: 8, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-5g.jpg", condition: "New", rating: 4.6, reviews: 123 },
+                { id: 104, name: "Samsung S22 128GB", price: 1100000, oldPrice: 1250000, stock: 7, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg", condition: "New", rating: 4.6, reviews: 98 },
+                { id: 105, name: "Samsung S23 256GB", price: 1400000, oldPrice: 1600000, stock: 6, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-5g.jpg", condition: "New", rating: 4.7, reviews: 145 },
+                { id: 106, name: "Samsung S23 Ultra 256GB", price: 2100000, oldPrice: 2350000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg", condition: "New", rating: 4.8, reviews: 167 },
+                { id: 107, name: "Samsung S24 256GB", price: 1700000, oldPrice: 1900000, stock: 5, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-5g.jpg", condition: "New", rating: 4.8, reviews: 89 },
+                { id: 108, name: "Samsung S24 Ultra 256GB", price: 2600000, oldPrice: 2900000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra-5g.jpg", condition: "New", rating: 4.9, reviews: 234 },
+                { id: 109, name: "Samsung S25 256GB", price: 2200000, oldPrice: 2450000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25.jpg", condition: "New", rating: 4.8, reviews: 45 },
+                { id: 110, name: "Samsung S25 Ultra 256GB", price: 3200000, oldPrice: 3500000, stock: 2, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25-ultra.jpg", condition: "New", rating: 5.0, reviews: 78 }
+            ],
+
+            // NEW GOOGLE - Pixel 6 to 10 Pro XL
+            newGoogle: [
+                { id: 201, name: "Google Pixel 6 128GB", price: 600000, oldPrice: 700000, stock: 8, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel6.jpg", condition: "New", rating: 4.4, reviews: 56 },
+                { id: 202, name: "Google Pixel 6 Pro 128GB", price: 800000, oldPrice: 900000, stock: 6, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel6-pro.jpg", condition: "New", rating: 4.5, reviews: 78 },
+                { id: 203, name: "Google Pixel 7 128GB", price: 750000, oldPrice: 850000, stock: 7, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel7.jpg", condition: "New", rating: 4.6, reviews: 89 },
+                { id: 204, name: "Google Pixel 7 Pro 128GB", price: 950000, oldPrice: 1050000, stock: 5, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel7-pro.jpg", condition: "New", rating: 4.7, reviews: 123 },
+                { id: 205, name: "Google Pixel 8 128GB", price: 900000, oldPrice: 1000000, stock: 6, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel8.jpg", condition: "New", rating: 4.7, reviews: 98 },
+                { id: 206, name: "Google Pixel 8 Pro 128GB", price: 1200000, oldPrice: 1350000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel8-pro.jpg", condition: "New", rating: 4.8, reviews: 145 },
+                { id: 207, name: "Google Pixel 9 128GB", price: 1100000, oldPrice: 1250000, stock: 5, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel9.jpg", condition: "New", rating: 4.8, reviews: 67 },
+                { id: 208, name: "Google Pixel 9 Pro 128GB", price: 1500000, oldPrice: 1700000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel9-pro.jpg", condition: "New", rating: 4.9, reviews: 89 },
+                { id: 209, name: "Google Pixel 10 128GB", price: 1400000, oldPrice: 1600000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel10.jpg", condition: "New", rating: 4.8, reviews: 34 },
+                { id: 210, name: "Google Pixel 10 Pro XL 128GB", price: 2000000, oldPrice: 2250000, stock: 2, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel10-pro-xl.jpg", condition: "New", rating: 5.0, reviews: 56 }
+            ],
+
+            // USED iPHONES
+            usediPhone: [
+                { id: 301, name: "iPhone 11 64GB (Used)", price: 450000, oldPrice: 850000, stock: 8, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11.jpg", condition: "Used - Grade A", rating: 4.3, reviews: 45 },
+                { id: 302, name: "iPhone 12 128GB (Used)", price: 650000, oldPrice: 1100000, stock: 6, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg", condition: "Used - Grade A", rating: 4.4, reviews: 67 },
+                { id: 303, name: "iPhone 13 128GB (Used)", price: 850000, oldPrice: 1350000, stock: 5, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg", condition: "Used - Grade A", rating: 4.5, reviews: 89 },
+                { id: 304, name: "iPhone 14 128GB (Used)", price: 1050000, oldPrice: 1650000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg", condition: "Used - Grade A", rating: 4.6, reviews: 56 },
+                { id: 305, name: "iPhone 15 128GB (Used)", price: 1450000, oldPrice: 2100000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg", condition: "Used - Grade A", rating: 4.7, reviews: 34 },
+                { id: 306, name: "iPhone 15 Pro 256GB (Used)", price: 1950000, oldPrice: 2800000, stock: 2, image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg", condition: "Used - Grade A", rating: 4.8, reviews: 23 }
+            ],
+
+            // USED SAMSUNG
+            usedSamsung: [
+                { id: 401, name: "Samsung S10 Plus (Used)", price: 350000, oldPrice: 650000, stock: 7, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s10-plus.jpg", condition: "Used - Grade A", rating: 4.2, reviews: 34 },
+                { id: 402, name: "Samsung S20 FE (Used)", price: 450000, oldPrice: 750000, stock: 6, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-fe-.jpg", condition: "Used - Grade A", rating: 4.3, reviews: 45 },
+                { id: 403, name: "Samsung S21 (Used)", price: 550000, oldPrice: 900000, stock: 5, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21-5g.jpg", condition: "Used - Grade A", rating: 4.4, reviews: 56 },
+                { id: 404, name: "Samsung S22 (Used)", price: 700000, oldPrice: 1100000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-5g.jpg", condition: "Used - Grade A", rating: 4.5, reviews: 67 },
+                { id: 405, name: "Samsung S23 (Used)", price: 950000, oldPrice: 1400000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-5g.jpg", condition: "Used - Grade A", rating: 4.6, reviews: 45 },
+                { id: 406, name: "Samsung S23 Ultra (Used)", price: 1450000, oldPrice: 2100000, stock: 2, image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-ultra-5g.jpg", condition: "Used - Grade A", rating: 4.7, reviews: 34 }
+            ],
+
+            // USED GOOGLE
+            usedGoogle: [
+                { id: 501, name: "Google Pixel 6 (Used)", price: 350000, oldPrice: 600000, stock: 6, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel6.jpg", condition: "Used - Grade A", rating: 4.3, reviews: 34 },
+                { id: 502, name: "Google Pixel 6 Pro (Used)", price: 480000, oldPrice: 800000, stock: 5, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel6-pro.jpg", condition: "Used - Grade A", rating: 4.4, reviews: 45 },
+                { id: 503, name: "Google Pixel 7 (Used)", price: 450000, oldPrice: 750000, stock: 4, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel7.jpg", condition: "Used - Grade A", rating: 4.5, reviews: 56 },
+                { id: 504, name: "Google Pixel 7 Pro (Used)", price: 600000, oldPrice: 950000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel7-pro.jpg", condition: "Used - Grade A", rating: 4.6, reviews: 34 },
+                { id: 505, name: "Google Pixel 8 (Used)", price: 550000, oldPrice: 900000, stock: 3, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel8.jpg", condition: "Used - Grade A", rating: 4.7, reviews: 23 },
+                { id: 506, name: "Google Pixel 8 Pro (Used)", price: 750000, oldPrice: 1200000, stock: 2, image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel8-pro.jpg", condition: "Used - Grade A", rating: 4.8, reviews: 12 }
+            ]
+        };
+
+        // ========== RENDER ALL PRODUCTS ==========
+        function renderAllProducts() {
+            // Render New iPhones
+            document.getElementById('newiPhoneProducts').innerHTML = products.newiPhone.map(createProductCard).join('');
+            
+            // Render New Samsung
+            document.getElementById('newSamsungProducts').innerHTML = products.newSamsung.map(createProductCard).join('');
+            
+            // Render New Google
+            document.getElementById('newGoogleProducts').innerHTML = products.newGoogle.map(createProductCard).join('');
+            
+            // Render Used iPhones
+            document.getElementById('usediPhoneProducts').innerHTML = products.usediPhone.map(createProductCard).join('');
+            
+            // Render Used Samsung
+            document.getElementById('usedSamsungProducts').innerHTML = products.usedSamsung.map(createProductCard).join('');
+            
+            // Render Used Google
+            document.getElementById('usedGoogleProducts').innerHTML = products.usedGoogle.map(createProductCard).join('');
+        }
+
+        function createProductCard(product) {
+            const stockStatus = product.stock > 5 ? 'In Stock' : product.stock > 0 ? 'Low Stock' : 'Sold Out';
+            const stockClass = product.stock > 5 ? 'badge-instock' : product.stock > 0 ? 'badge-lowstock' : 'badge-soldout';
+            
+            return `
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge-condition ${product.condition.includes('New') ? 'badge-new' : 'badge-used'}">${product.condition}</span>
+                        <span class="badge-stock ${stockClass}">${stockStatus}</span>
+                    </div>
+                    <img src="${product.image}" class="product-image" alt="${product.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400?text=Phone'">
+                    <div class="product-info">
+                        <div class="product-category">${product.name.split(' ')[0]}</div>
+                        <h3 class="product-title">${product.name}</h3>
+                        <div class="product-rating">
+                            <span class="stars">${'⭐'.repeat(Math.floor(product.rating))}</span>
+                            <span class="reviews">(${product.reviews})</span>
+                        </div>
+                        <div class="product-price-box">
+                            <span class="product-price">${formatPrice(product.price)} TZS</span>
+                            ${product.oldPrice ? `<span class="product-old-price">${formatPrice(product.oldPrice)} TZS</span>` : ''}
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-add-cart" onclick="addToCart(${product.id})" ${product.stock === 0 ? 'disabled' : ''}>Add to Cart</button>
+                            <button class="btn-quick-view" onclick="quickView(${product.id})">👁️</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ========== CART SYSTEM ==========
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cartCount').textContent = count;
+        }
+
+        function addToCart(productId) {
+            // Find product in any category
+            let product = null;
+            for (let category in products) {
+                const found = products[category].find(p => p.id === productId);
+                if (found) {
+                    product = found;
+                    break;
+                }
+            }
+            
+            if (product) {
+                const existingItem = cart.find(item => item.id === productId);
+                
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ ...product, quantity: 1 });
+                }
+                
+                saveCart();
+                showNotification(`${product.name} added to cart!`);
+            }
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 100px;
+                right: 30px;
+                background: linear-gradient(135deg, #00ff88, #00cc66);
+                color: black;
+                padding: 20px 35px;
+                border-radius: 60px;
+                font-weight: 700;
+                font-size: 18px;
+                z-index: 3000;
+                animation: slideIn 0.3s ease;
+                box-shadow: 0 20px 40px rgba(0, 255, 136, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+            `;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        function quickView(productId) {
+            let product = null;
+            for (let category in products) {
+                const found = products[category].find(p => p.id === productId);
+                if (found) {
+                    product = found;
+                    break;
+                }
+            }
+            if (product) {
+                alert(`📱 ${product.name}\n💰 Price: ${formatPrice(product.price)} TZS\n📊 Condition: ${product.condition}\n📦 Stock: ${product.stock} units\n⭐ Rating: ${product.rating}/5`);
+            }
+        }
+
+        function formatPrice(price) {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function toggleCart() {
+            alert('🛒 Checkout via WhatsApp for fastest service! Click WhatsApp button.');
+        }
+
+        function openWhatsApp() {
+            window.open('https://wa.me/255699278951', '_blank');
+        }
+
+        function scrollToProducts() {
+            document.getElementById('new').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAllProducts();
+            updateCartCount();
+        });
+    </script>
+</body>
+</html>
